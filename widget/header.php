@@ -78,7 +78,7 @@
 
     <section class="drop-down" id="drop-down">
         <div class="one-col">
-                <img src="car-logo (5).png" alt="">
+                <img src="image/car-logo (5).png" alt="">
             <ul>
                 <li><a href="...">Suzuki <span> Swift</span></a></li>
                 <li><a href="...">Suzuki <span>Ertiga</span></a></li>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="two-col">
-            <img src="car-logo (4).png" alt="">
+            <img src="image/car-logo (4).png" alt="">
             <ul>
                 <li><a href="...">Mahindra <span>XUV 700</span></a></li>
                 <li><a href="...">Mahindra <span> XUV 500</span></a></li>
@@ -106,7 +106,7 @@
         </div>
 
         <div class="three-col">
-            <img src="car-logo (6).png" alt="">
+            <img src="image/car-logo (6).png" alt="">
             <ul>
                 <li><a href="...">Toyota <span>Fortuner</span></a></li>
                 <li><a href="...">Toyota <span>Innova Crysta</span></a></li>
@@ -120,7 +120,7 @@
         </div>
 
         <div class="four-col">
-            <img src="car-logo (3).png" alt="">
+            <img src="image/car-logo (3).png" alt="">
             <ul>
                 <li><a href="...">Renault <span> Duster</span></a></li>
                 <li><a href="...">Renault <span>Triber</span></a></li>
@@ -131,7 +131,7 @@
         </div>
 
         <div class="four-col">
-            <img src="car-logo (7).png" alt="">
+            <img src="image/car-logo (7).png" alt="">
             <ul>
                 <li><a href="...">Honda <span>City</span></a></li>
                 <li><a href="...">Honda <span> Civic</span></a></li>
@@ -142,7 +142,7 @@
         </div>
 
         <div class="five-col">
-            <img src="car-logo (9).png" alt="">
+            <img src="image/car-logo (9).png" alt="">
             <ul>
                 <li><a href="...">Hyundai <span>Elantra</span></a></li>
                 <li><a href="...">Hyundai <span>Verna</span></a></li>
@@ -160,19 +160,19 @@
 
     <section class="drop-down2" id="drop-down2">
         <div class="wash">
-            <img src="wash.png" alt="">
+            <img src="image/wash.png" alt="">
             <h2><a href=""> CAR<span> WASH</span></a>
             </h2>
         </div>
 
         <div class="paint">
-            <img src="car paint.png" alt="">
+            <img src="image/car paint.png" alt="">
             <h2><a href=""> CAR<span> PAINT</span></a>
             </h2>
         </div>
 
         <div class="services1">
-            <img src="service.png" alt="">
+            <img src="image/service.png" alt="">
             <h2><a href=""> CAR<span> SERVICE</span></a>
             </h2>
         </div>
@@ -183,7 +183,7 @@
     <section class="drop-down3" id="drop-down3">
 
     <div class="latest">
-        <img src="latest.png" alt="">
+        <img src="image/latest.png" alt="">
     </div>
     <div class="latest-right">
         <h1>NISSAN <span>QASHQAI</span></h1>

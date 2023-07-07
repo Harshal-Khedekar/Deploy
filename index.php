@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaxDrive (India)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -18,12 +18,12 @@
 <body>
 
 <!-- hedear php -->
- <?php require_once 'widget\footer.php';?>
+ <?php require_once 'widget\header.php';?>
 
 <!-- header php end -->
 <section class="home" id="home">
         <h1 class="home1">GET YOUR <span>DREAM</span> CAR</h1>
-        <img class="home2" src="home.png" alt="">
+        <img class="home2" src="image/home.png" alt="">
         <a href=".." class="btn">EXPLORE</a>
     </section>
 
@@ -76,7 +76,7 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide box">
-                    <img src="slide (1).png" alt="" width="400px">
+                    <img src="image/slide (1).png" alt="" width="400px">
                     <div class="content">
                         <h3>Toyota Camry 2.5 Hybrid </h3>
                         <div class="price"><span>PRICE:</span> 9 Lakhs</div>
@@ -94,7 +94,7 @@
 
 
                 <div class="swiper-slide box">
-                    <img src="slide (2).png" alt="" width="400px">
+                    <img src="image/slide (2).png" alt="" width="400px">
                     <div class="content">
                         <h3>Toyota Innova Crysta</h3>
                         <div class="price"><span>PRICE:</span> 12 Lakhs</div>
@@ -113,7 +113,7 @@
 
 
                 <div class="swiper-slide box">
-                    <img src="slide (3).png" alt="" width="400px">
+                    <img src="image/slide (3).png" alt="" width="400px">
                     <div class="content">
                         <h3>Volkswagon Polo GTI</h3>
                         <div class="price"><span>PRICE:</span> 4 Lakhs</div>
@@ -132,7 +132,7 @@
 
 
                 <div class="swiper-slide box">
-                    <img src="slide (4).png" alt="" width="400px">
+                    <img src="image/slide (4).png" alt="" width="400px">
                     <div class="content">
                         <h3>Toyota Fortuner</h3>
                         <div class="price"><span>PRICE:</span> 18 Lakhs</div>
@@ -151,7 +151,7 @@
 
 
                 <div class="swiper-slide box">
-                    <img src="slide (5).png" alt="" width="400px">
+                    <img src="image/slide (5).png" alt="" width="400px">
                     <div class="content">
                         <h3>Maruti Suzuki Ertiga</h3>
                         <div class="price"><span>PRICE:</span> 7 Lakhs</div>
@@ -169,7 +169,7 @@
 
 
                 <div class="swiper-slide box">
-                    <img src="slide (6).png" alt="" width="400px">
+                    <img src="image/slide (6).png" alt="" width="400px">
                     <div class="content">
                         <h3>Maruti Suzuki Swift</h3>
                         <div class="price"><span>PRICE:</span> 5 Lakhs</div>
@@ -253,7 +253,7 @@
     <section class="search-car">
 
         <div class="image-search">
-            <img src="car-search.jpg" alt="" width="500px" height="300px">
+            <img src="image/car-search.jpg" alt="" width="500px" height="300px">
         </div>
         <div class="content2">
             <h1>CONFUSED CHOOSING THE<span> PERFECT CAR</span> FOR YOU?</h1>
@@ -286,3 +286,18 @@
             </form>
         </div>
     </section>
+
+    <?php require_once 'widget\footer.php';?>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
