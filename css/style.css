@@ -1,0 +1,1032 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    /* transition: all .1s linear; */
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: rgb(241, 240, 240);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.logo {
+    margin-left: 20px;
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    font-family: 'Staatliches';
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+    text-shadow: 1px 2px 1px gray;
+}
+
+.logo span {
+    color: orange;
+    font-family: 'Bangers';
+    letter-spacing: 3px;
+}
+
+.header .navbar a {
+    font-weight: 500;
+    font-family: 'Fira Sans';
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+}
+
+.header .navbar a:hover {
+    color: orange;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 2px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: 'fira sans';
+    color: orange;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(159, 158, 158);
+}
+
+.header #login-btn span {
+    font-size: 15px;
+    color: orange;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn {
+    font-size: 15px;
+    color: orange;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    background: black;
+    padding-top: 90px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home span {
+    color: orange;
+}
+
+.home h1 {
+    letter-spacing: 5px;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: fira sans;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home .btn {
+    color: orange;
+    font-size: 20px;
+}
+
+.home .btn:hover {
+    color: white;
+}
+
+.icons-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: rgb(235, 235, 235);
+}
+
+
+.icons-container .icons {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.icons-container .icons span {
+    height: 6rem;
+    width: 6rem;
+    line-height: 7rem;
+    font-size: 35px;
+    border-radius: 50%;
+    background: rgb(117, 117, 117);
+    color: orange;
+    filter: drop-shadow(1px 1px 1px gray);
+    text-align: center;
+
+}
+
+
+.icons-container .icons h3 {
+    font-family: fira sans;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.icons-container .icons p {
+    font-family: fira sans;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons:hover {
+    background: rgba(255, 166, 0, 0.7);
+    cursor: pointer;
+    box-shadow: 0px 0px 7px rgb(9, 9, 9);
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: fira sans;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.heading span {
+    position: relative;
+    z-index: -1;
+    color: orange;
+}
+
+.heading span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.vehicles .vehicles-slider {
+    font-family: fira sans;
+    padding: 5rem;
+    /* z-index: -1; */
+}
+
+.vehicles .vehicles-slider .box {
+    text-align: center;
+}
+
+.vehicles .vehicles-slider .box img {
+    width: 100%;
+    opacity: 0;
+    transform: scale(.8);
+}
+
+.vehicles .vehicles-slider .box .content {
+    transform: scale(0);
+    padding-top: 1rem;
+}
+
+.vehicles .vehicles-slider .swiper-slide-active img {
+    opacity: 1;
+}
+
+.vehicles .vehicles-slider .swiper-slide-active .content {
+    transform: scale(1);
+    opacity: (1);
+}
+
+.vehicles .vehicles-slider .box .content h3 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+
+.vehicles .vehicles-slider .box .content .price {
+    font-size: 2.5rem;
+    color: orange;
+    padding: 1rem;
+    font-weight: bolder;
+
+}
+
+.vehicles .vehicles-slider .box .content ul {
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.vehicles .vehicles-slider .box .content .btn {
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.vehicles .vehicles-slider .box .content .btn:hover {
+    color: white;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: orange;
+}
+
+.services {
+    background: rgb(235, 235, 235);
+}
+
+.services h1 span {
+    z-index: 0;
+
+    color: orange;
+}
+
+.services .box-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+
+.services .box-container .box {
+    background: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.services .box-container .box span {
+    height: 6rem;
+    width: 6rem;
+    line-height: 7rem;
+    font-size: 4rem;
+    color: orange;
+    filter: drop-shadow(1px 1px 1px gray);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.services .box-container .box h3 {
+    color: black;
+    font-family: fira sans;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+
+.services .box-container .box:hover {
+    background: gainsboro;
+    cursor: pointer;
+}
+
+.search-car {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%;  */
+    margin: 10px;
+    border-radius: 15px;
+    background: black;
+    max-width: 100%;
+}
+
+
+.search-car .image-search {
+    width: 40%;
+}
+
+.search-car .image-search img {
+    width: 100%;
+    /* max-width: 100%; */
+    margin: 10px;
+    padding: 20px;
+}
+
+.search-car .content2 {
+    /* text-align: center; */
+    width: 100%;
+    padding: 40px;
+    font-family: fira sans;
+}
+
+.search-car .content2 h1 {
+    color: white;
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.search-car .content2 h1 span {
+    color: orange;
+}
+
+.search-car .content2 p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.search-car .content2 .btn {
+    color: orange;
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 2rem;
+    background: white;
+    border-radius: 50px;
+}
+
+.search-car .content2 .btn a{
+    color: orange;
+}
+
+.search-car .content2 .btn a:hover {
+    color: black;
+}
+
+.search-car .content2 .btn:visited {
+    color: orange;
+}
+
+.login-form-container {
+    position: fixed;
+    font-family: fira sans;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    /* background: white; */
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.login-form-container.active {
+    top: 0;
+    opacity: 1;
+}
+
+.login-form-container form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 4px grey;
+    background: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 40rem;
+}
+
+
+.login-form-container form .buttons{
+    display: flex;
+    width: 100%;
+    margin: .5rem 0;
+    gap: 5px;
+}
+
+.login-form-container form .btn {
+    background: rgb(204, 204, 204);
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+
+.login-form-container form .btn:hover{
+    box-shadow: 0px 0px 3px rgb(70, 70, 70);
+}
+
+.login-form-container form h3 {
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.login-form-container form h3 span {
+    color: orange;
+}
+
+.login-form-container form .box {
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: .5rem;
+}
+
+.login-form-container form p {
+    text-align: left;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 900;
+}
+
+.login-form-container form p a {
+    color: orange;
+    text-decoration: none;
+}
+
+.login-form-container form p a:hover{
+    color: black;
+} 
+
+.login-form-container #close-login-form{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: orange;
+    cursor: pointer;
+}
+
+.login-form-container #close-login-form:hover {
+    filter: drop-shadow(1px 1px 1px gray);
+    color: black;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.contact .row .map {
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    /* border: 1px solid grey; */
+    border-radius: .5rem;
+    box-shadow: 1px 1px 4px grey;
+}
+
+.contact .row form {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    /* border: 1px solid grey; */
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px grey;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    font-family: fira sans;
+    font-size: 2rem;
+}
+
+.contact .row form h3 span {
+    color: orange;
+}
+
+.contact .row form .box {
+    margin: .7rem 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .btn {
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.footer .box-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer {
+    text-transform: capitalize;
+    font-family: fira sans;
+    background-color: rgb(241, 240, 240);
+}
+
+.footer .box-container .box h3 {
+    color: black;
+    font-size: 2.2rem;
+    padding: 2rem 0;
+}
+
+.footer .box-container .box h3 span {
+    color: orange;
+}
+
+
+.footer .box-container .box a {
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a span {
+    color: black;
+    padding-right: .8rem;
+}
+
+.footer .box-container .box a span:hover {
+    color: black;
+    padding-right: 2rem;
+}
+
+
+.credit{
+    padding: 5px;
+    background: black;
+}
+
+.credit h1{
+    font-size: 2rem;
+    font-family: 'Staatliches';
+    text-align: center;
+    color: white;
+}
+
+.credit h1 span{
+    font-family: 'bangers';
+    color: orange;
+}
+
+.credit h1:hover{
+    text-shadow: 1PX 1PX 1PX white;
+    cursor: pointer;
+}
+
+
+.container2{
+    font-family: fira sans;
+    position: fixed;
+    font-family: fira sans;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    /* background: blue; */
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;  
+
+}
+
+.container2.active{
+    top: 0;
+    opacity: 1  ;
+}
+
+.container2 form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 4px grey;
+    background: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 40rem;
+}
+
+.container2 form button{
+    padding: 10px;
+    font-family: 'fira sans';
+    background: rgb(204, 204, 204);
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 15px;
+    color: orange;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.container2 form button:hover{
+    box-shadow: 0px 0px 3px rgb(47, 47, 47);
+    color: black;
+}
+
+.container2 h3{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;    
+}
+
+.container2 h3 span{
+    color: orange;
+}
+
+
+
+
+.container2 form .input-control .box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: .5rem;
+}
+
+.container2 form p{
+    text-align: left;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: grey; 
+    font-weight: 900;
+}
+
+.container2 form p a{
+    color: orange;
+    text-decoration: none;
+}
+
+.container2 form p a:hover{
+    color: black;
+}
+
+.container2 #close-register-form{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: orange;
+    cursor: pointer; 
+}
+
+.container2 #close-register-form:hover{
+    color: black;
+}
+
+.container2 form .input-control input:focus{
+    outline: 0;
+}
+
+ 
+.input-control.error{   
+text-align: left;
+color: red;
+}
+
+.drop-down{
+    background: rgb(197, 197, 197);
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    box-shadow: 1px 3px 5px grey;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.drop-down img{
+    margin-left: 6px;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+}
+
+.drop-down ul{
+    line-height: 20px;
+    list-style-type: none;
+}
+
+.drop-down a{
+    font-size: 1.3rem;
+    font-family: 'Staatliches';
+    color: rgb(83, 83, 83);
+}
+
+.drop-down span{
+    /* font-family: 'bangers'; */
+    color: orange;
+}
+
+.drop-down li:hover{
+    text-shadow: 1px 1px 1px rgb(219, 219, 219);
+}
+
+
+.drop-down2{
+    background: rgb(197, 197, 197);
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    box-shadow: 1px 3px 5px grey;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.drop-down2 h2{
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'fira sans';
+    
+}
+
+.drop-down2 a{
+    color: rgb(32, 32, 32);
+
+}
+
+.drop-down2 a span{
+    color: orange;
+}
+
+.drop-down2 a:hover{
+    text-shadow: 1px 1px 2px gray;
+}
+
+
+
+.drop-down2 img{
+    width: 180px;
+    height: 180px;
+}
+
+.drop-down2 img:hover{
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+.drop-down3{
+    background: rgb(197, 197, 197);
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+
+    gap: 80px;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    box-shadow: 1px 3px 5px grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.drop-down3 .latest img{
+    width: 500px;
+    height: 300px;
+}
+
+.drop-down3 .latest img:hover{
+    cursor: pointer;
+    filter: drop-shadow(5px 3px 5px black);
+}
+
+.drop-down3 .latest-right{
+    padding: 30px;
+}
+
+.drop-down3 .latest-right h1{
+    font-family: 'fira sans';
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px black;
+}
+
+.drop-down3 .latest-right h1 span{
+    color: orange;
+}
+
+.drop-down3 .latest-right ul{
+    list-style-type: none;
+    /* text-align: center; */
+    font-size: 2rem;
+    font-family: 'fira sans';
+    font-weight: 500;
+    padding: 10px;
+}
+
+.drop-down3 .latest-right button{
+    text-shadow: 1px 1px 3px black;
+    background: none;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries for responsive */
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    #menu-btn {
+        display: block;
+
+    }
+
+    #menu-btn.grid {
+        transform: rotate(360deg);
+    }
+
+    .header #login-btn span {
+        display: block;
+    }
+
+    .header #login-btn .btn {
+        display: none;
+    }
+
+    .header .navbar {
+        border-top: 0.1em solid gray;
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: rgb(241, 240, 240);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 1px 3px 5px gray;
+    }
+
+    .header .navbar.active {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .search-car .image-search {
+        display: none;
+    }
+    .drop-down {
+        display: none;
+        width: 2px;
+        height: 2px;
+    }
+
+    .drop-down ul{
+        line-height: 1px;
+    }
+    
+
+    .drop-down2 {
+        display: none;
+        width: 2px;
+        height: 2px;
+    }
+
+    .drop-down2 h2{
+        display: none;
+    }
+
+    .drop-down3 {
+        display: none;
+        width: 2px;
+        height: 2px;
+    }
+
+    .drop-down3 img{
+        display: none;
+    }
+
+    .drop-down3 .latest-right {
+        display: none;
+    }
+
+
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+}
+}
